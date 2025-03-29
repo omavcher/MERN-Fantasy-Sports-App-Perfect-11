@@ -1,0 +1,419 @@
+/* myMatches.css */
+.my-matches-container {
+    min-height: 100vh;
+    background: #fff;
+    padding-bottom: 20px;
+  }
+  
+  .match-header {
+    background: #000;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .match-header h1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .match-header p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+  }
+  
+  .match-scores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .team-score {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+  }
+  
+  .team-score img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .team-score span {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .result {
+    font-size: 0.9rem;
+    color: #ffd700;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    background: #f0f2f5;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .tabs button {
+    background: none;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #666;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .tabs button.active {
+    color: #000;
+    border-bottom: 2px solid #000;
+  }
+  
+  .tab-content {
+    padding: 15px;
+  }
+  
+  /* My Contests Section */
+  .contest-card {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contest-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .prize-pool {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+  }
+  
+  .entry-fee {
+    background: #28a745;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+  
+  .contest-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .detail span {
+    font-size: 0.8rem;
+    color: #666;
+  }
+  
+  .detail p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #000;
+    margin: 5px 0 0;
+  }
+  
+  .contest-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .stat span {
+    font-size: 0.8rem;
+    color: #666;
+  }
+  
+  .stat p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #000;
+    margin: 5px 0 0;
+  }
+  
+  /* My Teams Section */
+  .team-card {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .team-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+  }
+  
+  .points {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #28a745;
+  }
+  
+  .team-roles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .team-roles span {
+    font-size: 0.8rem;
+    color: #666;
+  }
+  
+  .team-leaders {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .leader {
+    text-align: center;
+    position: relative;
+  }
+  
+  .leader img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+  
+  .leader span {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #28a745;
+    color: #fff;
+    font-size: 0.7rem;
+    padding: 2px 5px;
+    border-radius: 50%;
+  }
+  
+  .leader p {
+    font-size: 0.8rem;
+    color: #000;
+    margin: 5px 0 0;
+  }
+  
+  /* Scorecard Section */
+  .scorecard-section {
+    margin-bottom: 20px;
+  }
+  
+  .scorecard-section h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 5px;
+  }
+  
+  .scorecard-section p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .scorecard-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+  }
+  
+  .scorecard-table th,
+  .scorecard-table td {
+    padding: 8px;
+    font-size: 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .scorecard-table th {
+    background: #f0f2f5;
+    font-weight: 600;
+    color: #000;
+  }
+  
+  .scorecard-table td {
+    color: #666;
+  }
+  
+  .scorecard-section h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #000;
+    margin: 10px 0 5px;
+  }
+  
+  /* Stats Section */
+  .stats-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+  }
+  
+  .stats-table th,
+  .stats-table td {
+    padding: 8px;
+    font-size: 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .stats-table th {
+    background: #f0f2f5;
+    font-weight: 600;
+    color: #000;
+  }
+  
+  .stats-table td {
+    color: #666;
+  }
+  
+  .stats-table td img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  .dream-team-button {
+    background: #1e3a8a;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .match-header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .match-header p {
+      font-size: 1rem;
+    }
+  
+    .team-score img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .team-score span {
+      font-size: 1.2rem;
+    }
+  
+    .result {
+      font-size: 1rem;
+    }
+  
+    .tabs button {
+      font-size: 1rem;
+    }
+  
+    .contest-header .prize-pool {
+      font-size: 1.2rem;
+    }
+  
+    .entry-fee {
+      font-size: 1rem;
+    }
+  
+    .detail p {
+      font-size: 1rem;
+    }
+  
+    .stat p {
+      font-size: 1rem;
+    }
+  
+    .team-name {
+      font-size: 1.1rem;
+    }
+  
+    .points {
+      font-size: 1.3rem;
+    }
+  
+    .team-roles span {
+      font-size: 0.9rem;
+    }
+  
+    .leader img {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .leader p {
+      font-size: 0.9rem;
+    }
+  
+    .scorecard-section h3 {
+      font-size: 1.1rem;
+    }
+  
+    .scorecard-table th,
+    .scorecard-table td {
+      font-size: 0.9rem;
+    }
+  
+    .stats-table th,
+    .stats-table td {
+      font-size: 0.9rem;
+    }
+  
+    .stats-table td img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .dream-team-button {
+      font-size: 1rem;
+      padding: 12px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .my-matches-container {
+      margin: 0 auto;
+    }
+  
+    .team-score img {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .leader img {
+      width: 60px;
+      height: 60px;
+    }
+  }

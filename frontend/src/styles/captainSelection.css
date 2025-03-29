@@ -1,0 +1,280 @@
+/* captainSelection.css */
+.captain-selection-container {
+    min-height: 100vh;
+    background: #f0f2f5;
+    padding-bottom: 80px;
+  }
+  
+  .captain-selection-header {
+    background: #000;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .captain-selection-header h1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .captain-selection-header p {
+    font-size: 0.9rem;
+    margin: 5px 0 0;
+  }
+  
+  .captain-info {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: 10px 15px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .captain, .vice-captain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .captain span, .vice-captain span {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1e3a8a;
+  }
+  
+  .captain p, .vice-captain p {
+    font-size: 0.8rem;
+    color: #666;
+    margin: 5px 0 0;
+  }
+  
+  .player-list-d3d9-header {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: 10px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 0.8rem;
+    color: #666;
+    font-weight: 600;
+  }
+  
+  .player-list-d3d9-header span {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .player-list-d3d9-header span:first-child {
+    text-align: left;
+  }
+  
+  .player-list-d3d9 {
+    margin-bottom: 80px;
+  }
+  
+  .player-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    margin: 10px 15px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .player-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 2;
+  }
+  
+  .player-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #e0e0e0;
+  }
+  
+  .player-details h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1e3a8a;
+    margin: 0;
+  }
+  
+  .player-details p {
+    font-size: 0.8rem;
+    color: #666;
+    margin: 2px 0 0;
+  }
+  
+  .player-details span {
+    font-size: 0.8rem;
+    color: #1e3a8a;
+    font-weight: 600;
+    margin-top: 2px;
+    display: block;
+  }
+  
+  .player-selection {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+    justify-content: flex-end;
+  }
+  
+  .radio-label {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .radio-label input {
+    opacity: 0;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .radio-custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #e0e0e0;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #666;
+    transition: border-color 0.3s ease, background 0.3s ease;
+  }
+  
+  .radio-label input:checked + .radio-custom {
+    border-color: #28a745;
+    background: #28a745;
+    color: #fff;
+  }
+  
+  .percentage {
+    font-size: 0.8rem;
+    color: #666;
+    text-align: center;
+    width: 50px;
+  }
+  
+  .footer-buttons {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: 10px 15px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .preview-button, .save-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  
+  .preview-button {
+    background: #000;
+    color: #fff;
+  }
+  
+  .preview-button:hover {
+    background: #333;
+  }
+  
+  .save-button {
+    background: #28a745;
+    color: #fff;
+  }
+  
+  .save-button:hover {
+    background: #218838;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .captain-selection-header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .captain-selection-header p {
+      font-size: 1rem;
+    }
+  
+    .captain span, .vice-captain span {
+      font-size: 1rem;
+    }
+  
+    .player-list-d3d9-header {
+      font-size: 0.9rem;
+    }
+  
+    .player-card {
+      margin: 10px 30px;
+      padding: 15px;
+    }
+  
+    .player-image {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .player-details h3 {
+      font-size: 1rem;
+    }
+  
+    .player-details p, .player-details span {
+      font-size: 0.9rem;
+    }
+  
+    .radio-custom {
+      width: 30px;
+      height: 30px;
+      font-size: 0.9rem;
+    }
+  
+    .percentage {
+      font-size: 0.9rem;
+      width: 60px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .captain-selection-container {
+      margin: 0 auto;
+    }
+  
+    .player-card {
+      margin: 10px auto;
+      padding: 20px;
+    }
+  }
+
+
+  .captain-selected {
+    background: #e6ffe6 !important; /* Light green for captain */
+  }
+  
+  .vice-captain-selected {
+    background: #e6f2ff !important; /* Light blue for vice-captain */
+  }
+  
+  .radio-label input:disabled + .radio-custom {
+    border-color: #ccc;
+    color: #ccc;
+    cursor: not-allowed;
+  }

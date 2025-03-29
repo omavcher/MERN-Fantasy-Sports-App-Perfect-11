@@ -1,0 +1,377 @@
+/* teamSelection.css */
+.team-selection-container {
+    min-height: 100vh;
+    background: #f0f2f5;
+    padding-bottom: 80px;
+  }
+  
+  .team-selection-header {
+    background: #000;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .team-selection-header h1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .team-selection-header p {
+    font-size: 0.9rem;
+    margin: 5px 0 0;
+  }
+  
+  .team-selection-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 10px 15px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .players-selected {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .players-selected span {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #28a745;
+  }
+  
+  .players-selected p {
+    font-size: 0.8rem;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  .progress-candles {
+    display: flex;
+    gap: 2px;
+    margin-top: 5px;
+  }
+  
+  .candle {
+    width: 6px;
+    height: 12px;
+    background: #e0e0e0;
+    border-radius: 2px;
+    transition: background 0.3s ease;
+  }
+  
+  .candle.filled {
+    background: #28a745;
+  }
+  
+  .team-logos {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .team img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .team span {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1e3a8a;
+    margin-top: 5px;
+  }
+  
+  .credits-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .credits-left span {
+    font-size: 0.8rem;
+    color: #666;
+  }
+  
+  .credits-left p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1e3a8a;
+    margin: 5px 0 0;
+  }
+  
+  .copy-teams-banner {
+    background: #e0e7ff;
+    padding: 10px 15px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .copy-teams-banner span {
+    font-size: 0.9rem;
+    color: #1e3a8a;
+    font-weight: 500;
+  }
+  
+  .player-categories {
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .category {
+    font-size: 0.9rem;
+    color: #666;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .category.active {
+    color: #1e3a8a;
+    font-weight: 600;
+    border-bottom: 2px solid #1e3a8a;
+  }
+  
+  .selection-instruction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .selection-instruction span {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .selection-instruction select {
+    font-size: 0.9rem;
+    padding: 5px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background: #fff;
+    color: #333;
+  }
+  
+  .player-list-tdss {
+    margin-bottom: 80px;
+  }
+  
+  .player-card-tdss {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    margin: 10px 15px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .player-info-tdss {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .player-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #e0e0e0;
+  }
+  
+  .player-details-tdss h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1e3a8a;
+    margin: 0;
+  }
+  
+  .player-details-tdss p {
+    font-size: 0.8rem;
+    color: #666;
+    margin: 2px 0 0;
+  }
+  
+  .played-last-match {
+    font-size: 0.7rem;
+    color: #28a745;
+    margin-top: 2px;
+    display: block;
+  }
+  
+  .player-stats-tdss {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .team-status {
+    font-size: 0.8rem;
+    color: #666;
+    min-width: 60px;
+    text-align: left;
+  }
+  
+  .points-credits {
+    display: flex;
+    gap: 15px;
+    min-width: 60px;
+    justify-content: space-between;
+  }
+  
+  .points, .credits {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #1e3a8a;
+    text-align: center;
+    width: 30px;
+  }
+  
+  .select-button {
+    background: #ff4d4f;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  .select-button.selected {
+    background: #28a745;
+  }
+  
+  .footer-buttons {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: 10px 15px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .preview-button, .next-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  
+  .preview-button {
+    background: #000;
+    color: #fff;
+  }
+  
+  .preview-button:hover {
+    background: #333;
+  }
+  
+  .next-button {
+    background: #28a745;
+    color: #fff;
+  }
+  
+  .next-button:hover {
+    background: #218838;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .team-selection-header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .team-selection-header p {
+      font-size: 1rem;
+    }
+  
+    .team img {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .category {
+      font-size: 1rem;
+    }
+  
+    .player-card-tdss {
+      margin: 10px 30px;
+      padding: 15px;
+    }
+  
+    .player-image {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .player-details-tdss h3 {
+      font-size: 1rem;
+    }
+  
+    .player-details-tdss p {
+      font-size: 0.9rem;
+    }
+  
+    .team-status, .points, .credits {
+      font-size: 0.9rem;
+    }
+  
+    .select-button {
+      width: 30px;
+      height: 30px;
+      font-size: 1.2rem;
+    }
+  
+    .candle {
+      width: 8px;
+      height: 14px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .team-selection-container {
+      margin: 0 auto;
+    }
+  
+    .player-card-tdss {
+      margin: 10px auto;
+      padding: 20px;
+    }
+  }
+  .match-details-tdss {
+    background: #fff;
+    padding: 10px 15px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .match-details-tdss p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 0;
+  }
+  

@@ -1,0 +1,316 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Wrapper for background and centering */
+  .add-cash-wrapper {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Main Container */
+  .add-cash-container {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 450px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .header h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  .back-btn {
+    position: absolute;
+    left: 0;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #2c3e50;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .back-btn:hover {
+    color: #e74c3c;
+  }
+  
+  /* Balance Section */
+  .balance-section {
+    text-align: center;
+    margin-bottom: 30px;
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section-title {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    opacity: 0.9;
+  }
+  
+  .balance-section h3 {
+    font-size: 28px;
+    font-weight: 700;
+  }
+  
+  /* Amount Input Section */
+  .amount-section {
+    margin-bottom: 20px;
+  }
+  
+  .amount-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #dfe6e9;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .amount-input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.2);
+  }
+  
+  /* Preset Amounts */
+  .preset-amounts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  
+  .preset-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 2px solid #dfe6e9;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .preset-btn:hover {
+    background-color: #3498db;
+    color: #fff;
+    border-color: #3498db;
+  }
+  
+  .preset-btn.active {
+    background-color: #3498db;
+    color: #fff;
+    border-color: #3498db;
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+  }
+  
+  /* GST Breakdown */
+  .gst-breakdown {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #dfe6e9;
+  }
+  
+  .breakdown-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #2c3e50;
+    margin: 8px 0;
+  }
+  
+  .breakdown-item:nth-child(2) span:last-child {
+    color: #e74c3c; /* Red color for GST deduction */
+  }
+  
+  .breakdown-item.total {
+    font-weight: 600;
+    font-size: 16px;
+    border-top: 1px solid #dfe6e9;
+    padding-top: 10px;
+  }
+  
+  /* Add Cash Button */
+  .add-cash-btn {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  .add-cash-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(46, 204, 113, 0.4);
+  }
+  
+  /* Balance Details */
+  .balance-details {
+    margin-bottom: 30px;
+  }
+  
+  .balance-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #dfe6e9;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .balance-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .balance-item h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .withdraw-btn {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  .withdraw-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+  }
+  
+  .bonus-info {
+    font-size: 12px;
+    color: #7f8c8d;
+    margin-top: 10px;
+  }
+  
+  .know-more {
+    color: #3498db;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  /* Additional Links */
+  .additional-links {
+    margin-top: 20px;
+  }
+  
+  .link-item {
+    font-size: 16px;
+    color: #2c3e50;
+    margin: 10px 0;
+    font-weight: 500;
+  }
+  
+  .link-subitem {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin: 5px 0 10px 15px;
+  }
+  
+  .help-link {
+    font-size: 14px;
+    color: #3498db;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .add-cash-container {
+      padding: 20px;
+      max-width: 100%;
+      margin: 10px;
+    }
+  
+    .header h2 {
+      font-size: 20px;
+    }
+  
+    .back-btn {
+      font-size: 20px;
+    }
+  
+    .balance-section h3 {
+      font-size: 24px;
+    }
+  
+    .preset-btn {
+      padding: 8px 15px;
+      font-size: 12px;
+    }
+  
+    .add-cash-btn {
+      padding: 12px;
+      font-size: 14px;
+    }
+  
+    .withdraw-btn {
+      padding: 8px 15px;
+      font-size: 12px;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .add-cash-container {
+      max-width: 500px;
+    }
+  
+    .preset-amounts {
+      gap: 15px;
+    }
+  
+    .preset-btn {
+      padding: 12px 25px;
+      font-size: 16px;
+    }
+  }

@@ -1,0 +1,444 @@
+/* General styles */
+.my-matches-container {
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+  }
+  .contest-header{
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #8a8a8aa9;
+    padding: 7px 15px;
+  }
+  .contest-header span{
+    display: flex;
+  }
+  .contest-header span:first-child{
+    font-weight: bold;
+  }
+  .contest-header span:last-child{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgb(100, 100, 100);
+    gap: 3px;
+  }
+  .contest-header span:last-child p{
+    color: rgb(197, 2, 2);
+    font-weight: 600;
+    text-decoration: line-through;
+  }
+  .tabs {
+    display: flex;
+    overflow-x: hidden;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .tab {
+    flex: 1;
+    padding: 12px 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+    white-space: nowrap;
+    text-align: center;
+    min-width: max-content;
+  }
+  
+  .tab.active {
+    color: #000;
+    border-bottom: 3px solid #3a76f0;
+  }
+  
+  /* Teams container */
+  .teams-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+
+/* For smaller screens, show 1 column */
+@media (max-width: 600px) {
+    .teams-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* For medium screens, show 2 columns */
+@media (min-width: 601px) and (max-width: 900px) {
+    .teams-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* For larger screens, show 3 columns */
+@media (min-width: 901px) {
+    .teams-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+  
+  /* Team card styling */
+  .team-card {
+    position: relative;
+    border-radius: 8px;
+    background-image: url(https://img.freepik.com/premium-photo/green-grass-field-pattern-background-soccer-football_64749-1969.jpg);
+    background-size: contain;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white; /* Ensuring text is visible */
+    overflow: hidden;
+}
+
+.team-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Dark overlay */
+    border-radius: 8px;
+    z-index: 0;
+    color: white;
+}
+
+.team-card * {
+    position: relative;
+    z-index: 1;
+}
+
+  
+  .team-name {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    padding: 7px 15px;
+    background-color: #0000003c;
+  }
+  
+  .team-points {
+    font-size: 18px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .team-detailsw{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+
+.team-cap-vicpa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.team-cap-vi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.team-cap-vi:first-child p{
+    font-size: 0.7rem;
+    background-color: #191919;
+    padding: 3px;
+    border-radius: 4px;
+}
+.team-cap-vi:last-child p{
+    font-size: 0.7rem;
+    background-color: white;
+    color: #000000;
+    padding: 3px;
+    border-radius: 4px;
+}
+.team-cap-vi:first-child span{
+ position: absolute;
+ background-color: #000000;
+ border: 1px solid white;
+ top: -10%;
+ left: -10%;
+ font-size: 0.8rem;
+ height: 1.5rem;
+ width: 1.5rem;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 50%;
+ z-index: 500;
+ font-weight: 500;
+}
+.team-cap-vi:last-child span{
+    position: absolute;
+    background-color: white;
+    border: 1px solid #000000;
+    color: #000;
+    font-weight: 500;
+    top: -10%;
+    left: -10%;
+    font-size: 0.8rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 500;
+   }
+
+
+
+
+
+.team-cap-vi img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+
+
+
+  .player-stats {
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    margin-top: 2rem;
+    background-color: #0000003c;
+  }
+  
+  .stat-item {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .stat-label {
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 5px;
+  }
+  
+  .stat-value {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  /* Contests styling */
+  .contests-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contest-card-mxs {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #8a8a8aa9;
+  }
+  
+  .contest-card-mxs h3 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .contest-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 15px;
+  }
+  
+  .contest-details div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+  }
+  .contest-details div:first-child span{
+    color: #000;
+  }
+
+  .contest-details div span{
+    font-weight: bold;
+  }
+  
+  .contest-details-extrs{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    color: #434242;
+    background-color: #e5e5e578;
+    border-bottom: 1px solid #8a8a8aa9;
+    border-top: 1px solid #8a8a8aa9;
+
+  }
+  .contest-details-extrs span{
+   display: flex;
+   align-items: center;
+   font-size: 13px;
+}
+.contest-details-extrs span:last-child{
+    font-weight: 600;
+    color: rgb(1, 86, 1);
+}
+
+.contest-details-my-postiond{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px;
+    font-size: 0.9rem;
+    background-color: rgba(250, 250, 193, 0.333);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.contest-details-my-postiond div{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.contest-details-win-price{
+    color: rgb(2, 138, 2);
+}
+.contest-ranks5{
+    font-weight: bold;
+}
+
+  /* Scorecard styling */
+  .scorecard-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .scorecard-team {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .team-name {
+    color: white;
+  }
+  
+  .team-score {
+    font-weight: bold;
+  }
+  
+  .team-score span {
+    color: #666;
+    font-weight: normal;
+  }
+  
+  .scorecard-result {
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: #3a76f0;
+  }
+  
+  /* Stats styling */
+  .stats-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+  }
+  
+  .stats-container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .stats-container th, .stats-container td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .stats-container th {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .stats-container td {
+    color: #555;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    .tab {
+      font-size: 12px;
+      padding: 10px 5px;
+    }
+    
+    .team-name, .contest-card-mxs h3 {
+      font-size: 15px;
+    }
+    
+    .team-points {
+      font-size: 16px;
+    }
+    
+    .contest-details {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .no-contests{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .no-contests p{
+    font-size: 1.7rem;
+  }
+
+.join-contest-button{
+  background-color: #000;
+  color: white;
+  padding: 10px;
+ font-weight: bold;
+border-radius: 8px;
+}
+.join-contest-button:hover{
+  background-color: #333333;
+
+}
+.text-red{
+  color: red;
+}

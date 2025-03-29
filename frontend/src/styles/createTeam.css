@@ -1,0 +1,260 @@
+.create-team-container {
+    min-height: 100vh;
+    background: #f0f2f5;
+    padding-bottom: 20px;
+  }
+  
+  .create-team-header {
+    background: #28a745;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .match-info h1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .match-info p {
+    font-size: 0.9rem;
+    margin: 5px 0 0;
+  }
+  
+  .role-badges {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .badge {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .role-label {
+    background: #fff;
+    color: #28a745;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+  }
+  
+  .role-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+  
+  .role-name {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  
+  .prize-section {
+    background: #fff;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .prize-details h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1e3a8a;
+    margin: 0 0 10px;
+  }
+  
+  .prize-details p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  .payment-info {
+    text-align: center;
+  }
+  
+  .payment-info span {
+    font-size: 0.8rem;
+    color: #666;
+  }
+  
+  .payment-info h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ff4d4f;
+    margin: 5px 0;
+  }
+  
+  .payment-info p {
+    font-size: 0.8rem;
+    color: #666;
+    margin: 0 0 10px;
+  }
+  
+  .pay-button {
+    background: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  
+  .pay-button:hover {
+    background: #218838;
+  }
+  
+  .pay-button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .team-summary {
+    background: #fff;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-summary h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1e3a8a;
+    margin: 0 0 10px;
+  }
+  
+  .player-list {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .player-card {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .player-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .player-details h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1e3a8a;
+    margin: 0;
+  }
+  
+  .player-details p {
+    font-size: 0.8rem;
+    color: #666;
+    margin: 2px 0 0;
+  }
+  
+  .player-details span {
+    font-size: 0.8rem;
+    color: #1e3a8a;
+    font-weight: 600;
+    margin-top: 2px;
+    display: block;
+  }
+  
+  .role-tag {
+    background: #28a745;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    margin-left: 5px;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .create-team-header {
+      padding: 20px 30px;
+    }
+  
+    .match-info h1 {
+      font-size: 1.5rem;
+    }
+  
+    .match-info p {
+      font-size: 1rem;
+    }
+  
+    .role-image {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .role-name {
+      font-size: 1rem;
+    }
+  
+    .prize-section {
+      margin: 20px 30px;
+      padding: 25px;
+    }
+  
+    .prize-details h2 {
+      font-size: 1.8rem;
+    }
+  
+    .payment-info h3 {
+      font-size: 1.8rem;
+    }
+  
+    .team-summary {
+      margin: 20px 30px;
+      padding: 20px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .create-team-container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+  
+    .prize-section {
+      margin: 20px auto;
+    }
+  
+    .team-summary {
+      margin: 20px auto;
+    }
+  }
+
+  /* Add this to the existing createTeam.css */
+.prize-section.loading {
+    background: #fff;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .prize-section.loading p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+  }

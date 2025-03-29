@@ -1,0 +1,164 @@
+/* verifyOTP.css */
+.verify-otp-container {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #1e3a8a 0%, #3b82f6 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .logo h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  .verify-otp-box {
+    background: #1e3a8a;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .verify-otp-box h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .verify-otp-box p {
+    font-size: 0.9rem;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  
+  .verify-otp-box p a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 5px;
+  }
+  
+  .verify-otp-box input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .resend-otp {
+    font-size: 0.9rem;
+    color: #fff;
+  }
+  
+  .resend-link {
+    color: #d4ed31;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  .verify-button {
+    background: #d4ed31;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  .support {
+    font-size: 0.8rem;
+    color: #fff;
+  }
+  
+  .support a {
+    color: #d4ed31;
+    text-decoration: underline;
+  }
+  
+  .footer {
+    font-size: 0.7rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .logo h1 {
+      font-size: 2rem;
+    }
+  
+    .logo img {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .verify-otp-box {
+      padding: 30px;
+    }
+  
+    .verify-otp-box h2 {
+      font-size: 1.5rem;
+    }
+  
+    .verify-otp-box p {
+      font-size: 1rem;
+    }
+  
+    .verify-otp-box input {
+      font-size: 1.1rem;
+    }
+  
+    .resend-otp {
+      font-size: 1rem;
+    }
+  
+    .verify-button {
+      font-size: 1.1rem;
+      padding: 12px;
+    }
+  
+    .support {
+      font-size: 0.9rem;
+    }
+  
+    .footer {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .verify-otp-container {
+      padding: 40px;
+    }
+  
+    .verify-otp-box {
+      max-width: 450px;
+    }
+  }

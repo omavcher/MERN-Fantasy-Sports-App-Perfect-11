@@ -1,0 +1,343 @@
+.playground-container {
+  min-height: 100vh;
+  background: #f0f2f5;
+  padding: 0 0 15px;
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden;
+}
+
+.playground-header {
+  background: black;
+  color: #fff;
+  padding: 15px 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.playground-header h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.playground-header p {
+  font-size: 0.85rem;
+  margin: 5px 0 0;
+  opacity: 0.95;
+}
+
+.match-details-e3cd {
+  background: #fff;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.match-details-e3cd p {
+  font-size: 0.8rem;
+  color: #4b5563;
+  margin: 4px 0;
+  line-height: 1.3;
+}
+
+.team-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 10px;
+  border-bottom: 1px solid #e5e7eb;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.players-selected {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 80px;
+}
+
+.players-selected span {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #16a34a;
+}
+
+.players-selected p {
+  font-size: 0.7rem;
+  color: #6b7280;
+  margin: 3px 0;
+}
+
+.progress-candles {
+  display: flex;
+  gap: 2px;
+  margin-top: 4px;
+}
+
+.candle {
+  width: 6px;
+  height: 12px;
+  background: #d1d5db;
+  border-radius: 2px;
+}
+
+.candle.filled {
+  background: #16a34a;
+}
+
+.team-logos {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+ Artifacts: true;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  object-fit: contain;
+}
+
+.team span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin-top: 4px;
+}
+
+.credits-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  min-width: 70px;
+}
+
+.credits-left span {
+  font-size: 0.8rem;
+  color: #4b5563;
+}
+
+.credits-left p {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #dc2626;
+  margin: 3px 0 0;
+}
+
+.cricket-pitch {
+  position: relative;
+  width: 100%;
+  margin: 15px auto;
+  background: url(https://img.freepik.com/premium-photo/green-grass-field-pattern-background-soccer-football_64749-1969.jpg), 
+    linear-gradient(180deg, #15803d, #22c55e);
+  border-radius: 8px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  padding: 15px 10px;
+}
+
+.player-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  padding: 10px 0;
+  flex-wrap: wrap;
+}
+
+.player {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85px;
+  padding: 6px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.player:hover {
+  transform: translateY(-2px);
+}
+
+.player img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  object-fit: cover;
+}
+
+.player span {
+  font-size: 0.75rem;
+  color: #1f2937;
+  font-weight: 600;
+  margin-top: 4px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.player .credits {
+  font-size: 0.65rem;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+.player.captain img {
+  border-color: #facc15;
+}
+
+.player.vice-captain img {
+  border-color: #22c55e;
+}
+
+.role-badge {
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  background: #dc2626;
+  color: #fff;
+  font-size: 0.6rem;
+  font-weight: 700;
+  padding: 1px 4px;
+  border-radius: 8px;
+}
+
+.participation-details {
+  margin: 15px 10px;
+  margin-bottom: 5rem;
+  padding: 15px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.participation-details h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contest-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.contest-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background: #f9fafb;
+  border-radius: 6px;
+}
+
+.contest-item .label {
+  font-size: 0.8rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.contest-item .value {
+  font-size: 0.9rem;
+  color: #1f2937;
+  font-weight: 600;
+}
+
+/* Media Queries for larger screens */
+@media (min-width: 480px) {
+  .playground-header h1 {
+    font-size: 1.4rem;
+  }
+
+  .cricket-pitch {
+    padding: 20px 15px;
+  }
+
+  .player {
+    width: 100px;
+  }
+
+  .player img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .player span {
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .playground-header {
+    padding: 20px;
+  }
+
+  .playground-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .team-stats {
+    padding: 15px 20px;
+    flex-wrap: nowrap;
+  }
+
+  .team img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .cricket-pitch {
+    max-width: 95%;
+  }
+
+  .player {
+    width: 110px;
+  }
+
+  .player img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .contest-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .playground-container {
+    margin: 0 auto;
+  }
+
+  .cricket-pitch {
+    max-width: 95%;
+  }
+
+  .player {
+    width: 120px;
+  }
+
+  .contest-info {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

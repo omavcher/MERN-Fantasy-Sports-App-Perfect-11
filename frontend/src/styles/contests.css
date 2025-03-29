@@ -1,0 +1,280 @@
+.contests-container {
+  min-height: 100vh;
+  background: #f0f2f5;
+  padding-bottom: 80px;
+}
+
+.contests-header {
+  background: #000;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+.contests-header h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.contests-header p {
+  font-size: 0.9rem;
+  margin: 5px 0 0;
+}
+
+.contests-tabs {
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.tab {
+  font-size: 0.9rem;
+  color: #666;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.tab.active {
+  color: #1e3a8a;
+  font-weight: 600;
+  border-bottom: 2px solid #1e3a8a;
+}
+
+.sort-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.sort-options span {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.sort-options select {
+  font-size: 0.9rem;
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  background: #fff;
+  color: #333;
+}
+
+.contest-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contest-card {
+  background: #fff;
+  margin: 10px 15px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contest-link .contest-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background: #f9f9f9;
+}
+
+.contest-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.prize-pool span {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.prize-pool h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin: 5px 0 0;
+}
+
+.entry-fee {
+  text-align: right;
+}
+
+.entry-button {
+  background: #28a745;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  transition: background 0.3s ease;
+}
+
+.entry-button:hover {
+  background: #218838;
+}
+
+.entry-fee p {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0;
+}
+
+.contest-stats-sec {
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stats-details {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.additional-info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.confirmed {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.create-team-button {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.create-team-button button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+.create-team-button button:hover {
+  background: #333;
+}
+
+.plus-icon {
+  font-size: 1.2rem;
+}
+
+/* No Data Section */
+.no-data {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  margin: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.no-data p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.create-team-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+.create-team-btn:hover {
+  background: #333;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .contests-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .contests-header p {
+    font-size: 1rem;
+  }
+
+  .tab {
+    font-size: 1rem;
+  }
+
+  .sort-options {
+    padding: 15px 30px;
+  }
+
+  .contest-card {
+    margin: 10px 30px;
+    padding: 20px;
+  }
+
+  .prize-pool h2 {
+    font-size: 1.5rem;
+  }
+
+  .entry-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .no-data {
+    margin: 10px 30px;
+    padding: 25px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contests-container {
+    margin: 0 auto;
+  }
+
+  .contest-card {
+    margin: 10px auto;
+    padding: 25px;
+  }
+
+  .no-data {
+    margin: 10px auto;
+    padding: 30px;
+  }
+}

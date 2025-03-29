@@ -1,0 +1,185 @@
+/* signIn.css */
+.signin-container {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #1e3a8a 0%, #1e40af 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .logo span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  .signin-box {
+    background: #1e3a8a;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .signin-box h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .phone-icon {
+    font-size: 1.2rem;
+    margin-right: 10px;
+  }
+  
+  .input-group input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .invite-code {
+    font-size: 0.9rem;
+    color: #ccc;
+    text-align: left;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  
+  .age-confirmation {
+    display: flex;
+    align-items: center;
+    color: #ccc;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  
+  .age-confirmation input {
+    margin-right: 10px;
+  }
+  
+  .continue-button {
+    background: #d4ed31;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  .terms {
+    font-size: 0.8rem;
+    color: #ccc;
+    text-align: center;
+  }
+  
+  .terms .age-icon {
+    background: #ff4d4f;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 50%;
+    font-size: 0.7rem;
+    margin-right: 5px;
+  }
+  
+  .terms a {
+    color: #d4ed31;
+    text-decoration: none;
+  }
+  
+  .footer {
+    font-size: 0.7rem;
+    color: #ccc;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .logo img {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .logo span {
+      font-size: 2rem;
+    }
+  
+    .signin-box {
+      max-width: 400px;
+    }
+  
+    .signin-box h2 {
+      font-size: 1.5rem;
+    }
+  
+    .input-group input {
+      font-size: 1.1rem;
+    }
+  
+    .invite-code {
+      font-size: 1rem;
+    }
+  
+    .age-confirmation {
+      font-size: 1rem;
+    }
+  
+    .continue-button {
+      font-size: 1.1rem;
+      padding: 15px;
+    }
+  
+    .terms {
+      font-size: 0.9rem;
+    }
+  
+    .footer {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .signin-box {
+      max-width: 450px;
+    }
+  }
+  .google-login{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.4em 0.8em;
+  }

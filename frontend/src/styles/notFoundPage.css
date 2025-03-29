@@ -1,0 +1,201 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* 404 Page Container */
+  .not-found-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #2c3e50 0%, #8e44ad 100%); /* Blue-to-purple gradient */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Diagonal Lines Background */
+  .not-found-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.05) 10px,
+      transparent 10px,
+      transparent 20px
+    ); /* Diagonal lines */
+    pointer-events: none;
+  }
+  
+  /* Content Container */
+  .content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Logo Container */
+  .logo-container {
+    margin-bottom: 30px;
+  }
+  
+  /* Shield Logo */
+  .shield {
+    position: relative;
+    width: 120px;
+    height: 140px;
+    background: #d4ed31; /* Lime-green background */
+    border-radius: 60px 60px 10px 10px; /* Rounded top, flat bottom */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+    border: 4px solid #2c3e50; /* Dark blue border */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Number "11" inside the shield */
+  .number {
+    font-size: 48px;
+    font-weight: 700;
+    color: #2c3e50; /* Dark blue color for the number */
+  }
+  
+  /* "PERFECT 11" Text */
+  .logo-text {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  /* Error Message */
+  .error-message {
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+  }
+  
+  .error-code {
+    font-size: 80px;
+    font-weight: 700;
+    color: #e74c3c; /* Red color for the 404 code */
+    line-height: 1;
+  }
+  
+  .error-text {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    margin: 10px 0;
+  }
+  
+  .error-description {
+    font-size: 16px;
+    color: #dfe6e9;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  /* Go to Home Button */
+  .home-button {
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  .home-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+  }
+  
+  /* Fade-in Animation for the Error Message */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .shield {
+      width: 100px;
+      height: 120px;
+    }
+  
+    .number {
+      font-size: 40px;
+    }
+  
+    .logo-text {
+      font-size: 28px;
+    }
+  
+    .error-code {
+      font-size: 60px;
+    }
+  
+    .error-text {
+      font-size: 20px;
+    }
+  
+    .error-description {
+      font-size: 14px;
+      max-width: 250px;
+    }
+  
+    .home-button {
+      padding: 10px 25px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .shield {
+      width: 140px;
+      height: 160px;
+    }
+  
+    .number {
+      font-size: 56px;
+    }
+  
+    .logo-text {
+      font-size: 42px;
+    }
+  
+    .error-code {
+      font-size: 100px;
+    }
+  
+    .error-text {
+      font-size: 28px;
+    }
+  
+    .error-description {
+      font-size: 18px;
+      max-width: 350px;
+    }
+  }

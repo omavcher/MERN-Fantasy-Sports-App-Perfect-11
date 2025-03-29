@@ -1,0 +1,120 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Loading Page Container */
+  .loading-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #2c3e50 0%, #8e44ad 100%); /* Blue-to-purple gradient */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Diagonal Lines Background */
+  .loading-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.05) 10px,
+      transparent 10px,
+      transparent 20px
+    ); /* Diagonal lines */
+    pointer-events: none;
+  }
+  
+  /* Logo Container */
+  .logo-container {
+    text-align: center;
+    animation: pulse 1.5s infinite ease-in-out; /* Pulsing animation */
+  }
+  
+  /* Shield Logo */
+  .shield {
+    position: relative;
+    width: 120px;
+    height: 140px;
+    background: #d4ed31; /* Lime-green background */
+    border-radius: 60px 60px 10px 10px; /* Rounded top, flat bottom */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+    border: 4px solid #2c3e50; /* Dark blue border */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Number "11" inside the shield */
+  .number {
+    font-size: 48px;
+    font-weight: 700;
+    color: #2c3e50; /* Dark blue color for the number */
+  }
+  
+  /* "PERFECT 11" Text */
+  .logo-text {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  /* Pulsing Animation for the Logo */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.05);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .shield {
+      width: 100px;
+      height: 120px;
+    }
+  
+    .number {
+      font-size: 40px;
+    }
+  
+    .logo-text {
+      font-size: 28px;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .shield {
+      width: 140px;
+      height: 160px;
+    }
+  
+    .number {
+      font-size: 56px;
+    }
+  
+    .logo-text {
+      font-size: 42px;
+    }
+  }
