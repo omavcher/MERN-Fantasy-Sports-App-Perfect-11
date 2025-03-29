@@ -9,7 +9,7 @@ const GoogleLoginButton = ({ onSuccess }) => {
 
   const handleSuccess = async (credentialResponse) => {
     try {
-      const response = await axios.post('http://localhost:5000/api/v1/users/google-login', {
+      const response = await axios.post('https://mern-fantasy-sports-app-perfect-11.onrender.com/api/v1/users/google-login', {
         token: credentialResponse.credential,
         inviteCode // Pass the invite code to the backend
       });
