@@ -15,7 +15,7 @@ import LoadingPage from './pages/LoadingPage';
 import NotFoundPage from './pages/NotFoundPage';
 import Payment from './pages/Payment';
 import CreateTeam from './pages/CreateTeam';
-import Playground from './pages/playground';
+import Playground from './pages/Playground';
 import MyMatchesPage from './pages/MyMatchesPage';
 
 // PrivateRoute component to protect authenticated routes
